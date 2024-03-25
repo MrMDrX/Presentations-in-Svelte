@@ -1,2 +1,1 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1 class="bg-sky-700 px-4 py-2 text-white font-bold sm:px-8 sm:py-3">Presentations in SvelteKit</h1>
