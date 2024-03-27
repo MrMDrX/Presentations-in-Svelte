@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Slide from "./slide.svelte";
   import Code from "./code.svelte";
+  import Markdown from "./markdown.svelte";
+  import Slide from "./slide.svelte";
 </script>
 
 <Slide>Horizontal Slide</Slide>
@@ -45,3 +46,12 @@
 	 `}
   </Code>
 </Slide>
+
+<Markdown>
+  {`
+		## Markdown ❤️
+		You can use **HTML** or **Markdown** for slides.
+	`}
+</Markdown>
+
+<Markdown name="example.md" external />
