@@ -1,5 +1,6 @@
 <script lang="ts">
   import Slide from "./slide.svelte";
+  import Code from "./code.svelte";
 </script>
 
 <Slide>Horizontal Slide</Slide>
@@ -25,4 +26,22 @@
     <li>Solid</li>
     <li>Vue</li>
   </ul>
+</Slide>
+
+<Slide animate>
+  <Code id="code" lines>
+    {`
+			function love() {}
+	 `}
+  </Code>
+</Slide>
+
+<Slide animate>
+  <Code id="code" lines="2|1-3">
+    {`
+			function love() {
+				console.log('Svelte')
+			}
+	 `}
+  </Code>
 </Slide>
