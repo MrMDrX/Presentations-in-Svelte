@@ -1,6 +1,7 @@
 <script lang="ts">
   import Code from "./code.svelte";
   import Markdown from "./markdown.svelte";
+  import Notes from "./notes.svelte";
   import Slide from "./slide.svelte";
 </script>
 
@@ -55,3 +56,20 @@
 </Markdown>
 
 <Markdown name="example.md" external />
+
+<Slide animate>
+  <p>This contains speaker notes</p>
+  <p>Press S to see it</p>
+  <ul>
+    <li>Svelte ❤️</li>
+    <li>React</li>
+    <li>Solid</li>
+    <li>Vue</li>
+  </ul>
+  <Notes>
+    <ul>
+      <li><b>This is a speaker note</b></li>
+      <li><b>Avoid eye contact.</b></li>
+    </ul>
+  </Notes>
+</Slide>
